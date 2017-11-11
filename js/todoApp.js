@@ -1,12 +1,9 @@
 /**
  * App for making a simple todo list
- * Author: 
+ * Author: boosmoke 
  *
- * @requires jQuery
- * @version 0.0.1
+ * @version 1.0.0
  */
-// SKAPA två olika div containers, en för complete och en incomplete. Var man sedan append li itemet till de olika lists... kom ihåg och rebind alla click events
-// alternativt skapa så att checked checkbox sparas i localstorage
 var TodoApp = ( function() {
     // Properties
     var button = document.getElementById('add-task');
@@ -169,7 +166,7 @@ var TodoApp = ( function() {
         // Application init code
         createLocalList();
         bindEvents();
-        //getDate();
+        getDate();
     }
 
     return {
